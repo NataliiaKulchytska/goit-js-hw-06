@@ -9,7 +9,7 @@
 (тега <h2>) и количество элементов в категории (всех вложенных в него <li>). В результате, в консоли
 будут выведены такие сообщения.
 
-Number of categories: 3
+\\\Number of categories: 3
 
 Category: Animals Elements: 4
 
