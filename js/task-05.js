@@ -4,11 +4,12 @@ console.log(inputEl.value);
 const spanEL = document.querySelector('#name-output');
 
 inputEl.addEventListener('input', (event) => {
+       spanEL.textContent = event.currentTarget.value;
 if (inputEl === null) {
-    spanEL.textContent('Anonymous');
+    spanEL.textContent = Anonymous;
 }
 
-    spanEL.textContent = event.currentTarget.value;
+ 
 
 });
 
