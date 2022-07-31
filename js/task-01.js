@@ -3,5 +3,9 @@ const listWithId = document.querySelector('#categories');
 console.log('Number of categories:',listWithId.children.length)
 
 const itemEl = listWithId.querySelectorAll('.item');
-console.log(`Category: ${itemEl.children} Elements: ${itemEl.lastElementChild} `);
+
+const titleEl = itemEl.firstElementChild;
+
+const element = itemEl.lastElementChild;
+console.log(`Category: ${titleEl} Elements: ${element}`);
 
