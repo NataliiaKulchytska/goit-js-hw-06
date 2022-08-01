@@ -4,8 +4,9 @@ console.log('Number of categories:',listWithId.children.length)
 
 const itemEl = listWithId.querySelectorAll('.item');
 
-const titleEl = itemEl.firstElementChild;
+const titleEl = listWithId.querySelectorAll('h2');;
+console.log(...titleEl);
 
-const element = itemEl.lastElementChild;
-console.log(`Category: ${titleEl} Elements: ${element}`);
+const element = document.querySelectorAll(titleEl.nextSibling);
+console.log(`Category: ${titleEl} Elements: ${element.children}`);
 
