@@ -1,6 +1,6 @@
 # goit-js-hw-06
 
-Задание 1 В HTML есть список категорий ul#categories.
+<!-- Задание 1 В HTML есть список категорий ul#categories.
 
 Напиши скрипт который:
 
@@ -15,7 +15,7 @@ Category: Animals Elements: 4
 
 Category: Products Elements: 3
 
-Category: Technologies Elements: 5
+Category: Technologies Elements: 5 -->
 
 <!-- Задание 2 В HTML есть пустой список ul#ingredients.
 
