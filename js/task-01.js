@@ -4,9 +4,14 @@ console.log('Number of categories:',listWithId.children.length)
 
 const itemEl = listWithId.querySelectorAll('.item');
 
-const titleEl = listWithId.querySelectorAll('h2');;
-console.log(...titleEl);
-
-const element = document.querySelectorAll(titleEl.nextSibling);
-console.log(`Category: ${titleEl} Elements: ${element.children}`);
+const finalResult = itemEl => {
+    itemEl.forEach(element => {
+        const titleEl = listWithId.querySelector('h2');
+        console.log('Category:', titleEl.textContent); 
+        
+        const elResult = element.querySelector('ul');
+        console.log('Elements:', elResult.children.length)
+    }); 
+}
+finalResult(itemEl);
 
