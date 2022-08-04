@@ -1,20 +1,25 @@
 const div = document.querySelector('#counter');
-console.log(div);
 
-const actions = document.querySelectorAll('button');
-console.log(actions);
+const refs = {
+   decrementBtn: document.querySelector('button[data-action="decrement"]'),
+   incrementBtn: document.querySelector('button[data-action="increment"]'),
+   spanCounter: document.querySelector('#value'),
+}
 
-const spanEl = document.querySelector('#value');
+refs.decrementBtn.addEventListener('click',  onDecrementButtonClick);
+refs.incrementBtn.addEventListener('click', onIncremenButtonClick);
+
+let counterValue = 0;
+
+function onDecrementButtonClick() {
+   
+   counterValue -= 1;
+   refs.spanCounter.textContent = `${counterValue}`;
 
 
-const counterValue = 0;
-actions.addEventListener('click', () => {
-    if ('click' === actions[0].dataset.actions) {
-        counterValue -= actions[0].dataset;
-    } else {
-        counterValue += actions[1].dataset;
-    }
-    
-});
-
-// console.log(spanEl);
+};
+function onIncremenButtonClick() {
+   
+   counterValue += 1;
+   refs.spanCounter.textContent = `${counterValue}`;
+};
