@@ -4,11 +4,11 @@ const textInput = document.querySelector('#validation-input');
 
 textInput.addEventListener("blur", onCheckContentInput);
 
-function onCheckContentInput(event) {
-   textInput.textContent.length === event.dataset.length
+function onCheckContentInput() {
+   textInput.textContent.length === textInput[data-length]
           ? textInput.valid
           : textInput.invalid;
-}
+};
 
 
  console.log(textInput);
