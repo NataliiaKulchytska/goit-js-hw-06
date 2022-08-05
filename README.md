@@ -52,7 +52,7 @@ ul.gallery.
 <input type="text" id="name-input" placeholder="Please enter your name" />
 <h1>Hello, <span id="name-output">Anonymous</span>!</h1> -->
 
-Задание 6 Напиши скрипт, который при потере фокуса на инпуте (событие blur), проверяет его
+<!-- Задание 6 Напиши скрипт, который при потере фокуса на инпуте (событие blur), проверяет его
 содержимое на правильное количество введённых символов.
 
 <input
@@ -69,15 +69,15 @@ ul.gallery.
 
 #validation-input.valid { border-color: #4caf50; }
 
-#validation-input.invalid { border-color: #f44336; }
+#validation-input.invalid { border-color: #f44336; } -->
 
-Задание 7 Напиши скрипт, который реагирует на изменение значения input#font-size-control (событие
+<!-- Задание 7 Напиши скрипт, который реагирует на изменение значения input#font-size-control (событие
 input) и изменяет инлайн-стиль span#text обновляя свойство font-size. В результате при
 перетаскивании ползунка будет меняться размер текста.
 
 <input id="font-size-control" type="range" min="16" max="96" />
 <br />
-<span id="text">Abracadabra!</span>
+<span id="text">Abracadabra!</span> -->
 
 Задание 8 Напиши скрипт управления формой логина.
 
