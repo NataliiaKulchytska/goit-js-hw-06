@@ -9,9 +9,11 @@ const btnChangeColor = document.querySelector('.change-color')
 btnChangeColor.addEventListener('click', changeColor);
 
 function changeColor(event) {
-  bodyBgColor.style.backgroundColor = getRandomHexColor();
+  const funHexCol = getRandomHexColor(event);
+
+  bodyBgColor.style.backgroundColor = funHexCol;
  
-  spanRef.textContent = getRandomHexColor(event);
+  spanRef.textContent = funHexCol;
 };
 //  console.log(spanRef);
 
